@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CVE Search by Year</title>
+</head>
+<body>
+    <h1>Search CVEs by Year</h1>
+    <form action="/search" method="GET">
+        <label for="year">Enter Year (e.g. 2023):</label>
+        <input type="text" name="year" id="year" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+    <h2>Results for {{ year }}</h2>
+    <ul>
+        {% for cve in results %}
+        <li>
+            <strong>{{ cve.id }}</strong> — {{ cve.description }}<br>
+            Published: {{ cve.published }} | Score: {{ cve.score }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>

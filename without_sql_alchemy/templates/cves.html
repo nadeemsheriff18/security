@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All CVEs</title>
+</head>
+<body>
+    <h1>All CVEs (Page {{ page }})</h1>
+
+    <ul>
+    {% for cve in results %}
+        <li>
+            <strong>{{ cve.id }}</strong> — {{ cve.description }}<br>
+            Published: {{ cve.published }} | Score: {{ cve.score }}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div>
+        {% if page > 1 %}
+            <a href="{{ url_for('cves_html') }}?page={{ page - 1 }}">Previous</a>
+        {% endif %}
+        
+        {% if (page * limit) < total %}
+            <a href="{{ url_for('cves_html') }}?page={{ page + 1 }}">Next</a>
+        {% endif %}
+    </div>
+
+    <br><a href="/">← Back to Search</a>
+</body>
+</html>
