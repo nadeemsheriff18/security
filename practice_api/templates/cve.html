@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CVE Details</title>
+</head>
+<body>
+    {% if cve %}
+        <h2>{{ cve.title }}</h2>
+        <p><strong>ID:</strong> {{ cve.id }}</p>
+        <p><strong>Description:</strong> {{ cve.description }}</p>
+        <p><strong>Severity:</strong> {{ cve.severity }}</p>
+        <p><strong>Published:</strong> {{ cve.published }}</p>
+        <a href="/">🔍 Search Another</a>
+    {% else %}
+        <h2 style="color:red;">CVE Not Found</h2>
+        <a href="/">🔙 Back to Search</a>
+    {% endif %}
+</body>
+</html>

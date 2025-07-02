@@ -1,0 +1,72 @@
+[
+  {
+    "id": "CVE-2023-0001",
+    "title": "OpenSSL Buffer Overflow",
+    "description": "A buffer overflow vulnerability in OpenSSL allows attackers to execute arbitrary code.",
+    "severity": "high",
+    "published": "2023-01-15"
+  },
+  {
+    "id": "CVE-2023-0002",
+    "title": "Apache HTTP Server Path Traversal",
+    "description": "Improper sanitization in Apache HTTP Server may lead to path traversal.",
+    "severity": "medium",
+    "published": "2023-02-05"
+  },
+  {
+    "id": "CVE-2023-0003",
+    "title": "Linux Kernel Race Condition",
+    "description": "A race condition in the Linux Kernel leads to privilege escalation.",
+    "severity": "critical",
+    "published": "2023-03-10"
+  },
+  {
+    "id": "CVE-2023-0004",
+    "title": "MySQL Authentication Bypass",
+    "description": "In some configurations, MySQL fails to properly verify user credentials.",
+    "severity": "high",
+    "published": "2023-04-01"
+  },
+  {
+    "id": "CVE-2023-0005",
+    "title": "MongoDB Denial of Service",
+    "description": "A crafted query in MongoDB may cause service interruption.",
+    "severity": "low",
+    "published": "2023-04-15"
+  },
+  {
+    "id": "CVE-2023-0006",
+    "title": "Nginx Memory Leak",
+    "description": "A memory leak in Nginx causes performance degradation over time.",
+    "severity": "medium",
+    "published": "2023-05-01"
+  },
+  {
+    "id": "CVE-2023-0007",
+    "title": "Docker Container Breakout",
+    "description": "An issue in Docker may allow escape from container to host environment.",
+    "severity": "critical",
+    "published": "2023-05-20"
+  },
+  {
+    "id": "CVE-2023-0008",
+    "title": "Windows RDP Heap Overflow",
+    "description": "Heap overflow vulnerability in RDP may allow remote code execution.",
+    "severity": "high",
+    "published": "2023-06-12"
+  },
+  {
+    "id": "CVE-2023-0009",
+    "title": "WordPress Plugin SQL Injection",
+    "description": "An insecure plugin in WordPress allows SQL injection via user input.",
+    "severity": "medium",
+    "published": "2023-06-30"
+  },
+  {
+    "id": "CVE-2023-0010",
+    "title": "Python `pickle` RCE",
+    "description": "Improper use of `pickle` module may result in remote code execution.",
+    "severity": "high",
+    "published": "2023-07-01"
+  }
+]
